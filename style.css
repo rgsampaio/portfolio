@@ -252,3 +252,59 @@ main {
     max-width: 600px;
     height: auto;
 }
+
+.projects__content {
+    padding: 8em 0;
+}
+
+.projects__content h2 {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.8em;
+}
+
+.projects__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+}
+
+.project__card {
+    border: 3px solid var(--accent-dark);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project__card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0px 8px var(--box-shadow);
+}
+
+.project__card img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 6px 6px 0 0;
+}
+
+.project__card h3 {
+    margin: 1rem;
+    font-size: 1.25rem;
+    color: var(--text-primary);
+}
+
+.project__card p {
+    color: var(--text-secondary);
+    padding: 0 1rem 1rem;
+    line-height: 1.3rem;
+    font-size: 1.1rem;
+}
+
+.project__card a {
+    margin: 0 1rem 1rem;
+    padding: 8px 12px;
+    display: inline-block;
+    color: var(--accent);
+    font-weight: bold;
+}
