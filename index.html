@@ -1,112 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev Ricardo Sampaio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Ricardo Sampaio | Frontend Developer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/9faa1959c6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
+    <header class="nav">
         <nav class="nav__content container">
-            <h2 class="nav__logo title">&lt; Ricardo <span class="accent">Sampaio</span><span id="cursor"> | </span>&gt;</h2>
+            <h2 class="nav__logo title">&lt; Ricardo <span class="accent">Sampaio</span><span id="blink"> | </span>&gt;
+            </h2>
             <ul class="nav__link">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero container">
-            <article class="hero__content">
-                <h1 class="title">FRONTEND <span class="accent">DEVELOPER</span></h1>
-                <p class="text">Frontend Developer in progress, exploring how to create clean, responsive, and user-friendly designs
-                    while learning something new every day.</p>
-                <a href="#projects" class="btn">PROJECTS</a>
-            </article>
-        </section>
-        <section id="about" class="about container">
-            <article class="about__content">
-                <h2 class="title">ABOUT</h2>
-                <div class="about__item">
-                    <div class="about__img">
-                        <img src="assets/image.svg" alt="Photo of Ricardo Sampaio">
-                    </div>
-                    <div class="about__text">
-                        <h3 class="title">&lt; Ricardo Sampaio &gt;</h3>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem molestias deserunt,
-                            similique expedita officia ex molestiae. Sit quaerat deleniti explicabo ut perferendis eius
-                            exercitationem quod nihil soluta quas, accusantium nostrum. Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Veniam blanditiis odio ullam laborum suscipit non reiciendis
-                            recusandae velit. In, autem? Illum perspiciatis quasi corporis voluptate animi, unde laborum rem
-                            culpa.</p>
-                        <a href="#" class="btn">
-                            <i class="fa-solid fa-file-arrow-down"></i>
-                            CURRICULUM
-                        </a>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section id="projects" class="projects container">
-            <article class="projects__content">
-                <h2 class="title">PROJECTS</h2>
-                <div class="projects__grid">
-                    <div class="project-card">
-                        <img src="https://imgs.search.brave.com/SWSrKMRTAgTE6gsLnEPozz88NB512hh05cKHvL6Ng9s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vZ2FtZW92/ZXJkcml2ZS5jb20u/YnIvd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMDkvd2FsdGVy/LXdoaXRlLmpwZz9m/aXQ9MTI4MCw3MTcm/c3NsPTE"
-                            alt="Projeto 1" width="100px">
-                        <h3>Projeto 1</h3>
-                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur placeat laborum rem
-                            maiores? Eius sit, officiis possimus repellendus et voluptas error magnam commodi ipsa,
-                            cupiditate saepe molestiae, blanditiis fuga recusandae! Tecnologias usadas: HTML, CSS, JS …
-                        </p>
-                        <a href="link-do-projeto" target="_blank" rel="noopener">Ver projeto</a>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <!-- <section>
-            <div>
-                <h2>Skills</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, quasi blanditiis cupiditate adipisci.</p>
+        <section class="hero__content container">
+            <h1 class="title">FRONTEND <span class="accent">DEVELOPER</span></h1>
+            <p>Criando interfaces modernas e funcionais, com foco em código limpo, responsividade e uma boa experiência
+                para o usuário.</p>
+            <a href="#projects" class="btn">PROJETOS</a>
+            <div class="scroll-down">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div>
-
+        </section>
+        <section id="about" class="about__content container divider reveal">
+            <h2 class="title">SOBRE MIM</h2>
+            <div class="about__item">
+                <div class="about__img">
+                    <img src="assets/picture.png" alt="Foto de Perfil">
+                </div>
+                <div class="about__text">
+                    <h2 class="title">&lt; Ricardo Sampaio &gt;</h2>
+                    <p>Sou um desenvolvedor frontend em início de carreira, focado em criar interfaces modernas,
+                        responsivas e acessíveis. Trabalho principalmente com <strong>HTML</strong>,
+                        <strong>CSS</strong>, <strong>JavaScript</strong> e <strong>React</strong>, buscando unir design
+                        e código limpo para oferecer experiências digitais funcionais e intuitivas enquanto aprimoro
+                        minhas habilidades a cada projeto.
+                    </p>
+                    <a  class="btn" href="assets/Ricardo_Sampaio_Curriculo.pdf" download>
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                        CURRÍCULO
+                    </a>
+                </div>
             </div>
-        </section> -->
-        <section id="contact" class="contact container">
-            <article class="contact__content">
-                <h2 class="title">CONTACT ME</h2>
-                <div class="contact__links">
-                    <a href="#" class="contact__card">
+        </section>
+        <section id="projects" class="projects__content container divider reveal">
+            <h2 class="title">PROJETOS</h2>
+            <div class="projects__grid">
+                <article class="project__card">
+                    <img src="assets/em-breve.png" alt="Projeto 3" width="100px">
+                    <h3>Projeto 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur placeat laborum rem
+                        maiores? Eius sit, officiis possimus repellendus et voluptas error magnam commodi ipsa,
+                        cupiditate saepe molestiae, blanditiis fuga recusandae! Tecnologias usadas: HTML, CSS, JS …
+                    </p>
+                    <!-- <a href="link" target="_blank" rel="noopener"></a> -->
+                    <a href="#">Ver projeto</a>
+                </article>
+                <article class="project__card">
+                    <img src="assets/em-breve.png" alt="Projeto 3" width="100px">
+                    <h3>Projeto 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur placeat laborum rem
+                        maiores? Eius sit, officiis possimus repellendus et voluptas error magnam commodi ipsa,
+                        cupiditate saepe molestiae, blanditiis fuga recusandae! Tecnologias usadas: HTML, CSS, JS …
+                    </p>
+                    <a href="#">Ver projeto</a>
+                </article>
+                <article class="project__card">
+                    <img src="assets/em-breve.png" alt="Projeto 3" width="100px">
+                    <h3>Projeto 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur placeat laborum rem
+                        maiores? Eius sit, officiis possimus repellendus et voluptas error magnam commodi ipsa,
+                        cupiditate saepe molestiae, blanditiis fuga recusandae! Tecnologias usadas: HTML, CSS, JS …
+                    </p>
+                    <a href="#">Ver projeto</a>
+                </article>
+            </div>
+        </section>
+        <section id="skills" class="skills__content container divider reveal">
+            <h2 class="title">HABILIDADES</h2>
+            <p>
+                Principais ferramentas e tecnologias que impulsionam meus projetos:
+            </p>
+            <div class="skills__grid">
+                <article class="skill__item">
+                    <i class="fa-brands fa-html5" style="color:#e44d26;"></i>
+                    <span>HTML5</span>
+                </article>
+                <article class="skill__item">
+                    <i class="fa-brands fa-css3-alt" style="color:#379BD6;"></i>
+                    <span>CSS3</span>
+                </article>
+                <article class="skill__item">
+                    <i class="fa-brands fa-js-square" style="color:#f7df1e;"></i>
+                    <span>JavaScript</span>
+                </article>
+                <article class="skill__item">
+                    <i class="fa-brands fa-react" style="color:#51C3E1;"></i>
+                    <span>React</span>
+                </article>
+                <article class="skill__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                        <path
+                            d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
+                            fill="#18B4B8" />
+                    </svg>
+                    <span>Tailwind</span>
+                </article>
+                <article class="skill__item">
+                    <i class="fa-brands fa-git-alt" style="color:#DF4C37;"></i>
+                    <span>Git</span>
+                </article>
+                <article class="skill__item">
+                    <i class="fa-brands fa-github" style="color:#ffffff;"></i>
+                    <span>GitHub</span>
+                </article>
+                <article class="skill__item">
+                    <i class="fa-brands fa-figma" style="color:#A25AFF;"></i>
+                    <span>Figma</span>
+                </article>
+            </div>
+        </section>
+        <section id="contact" class="contact__content container reveal">
+            <h2 class="title">FALE COMIGO</h2>
+            <div class="contact__link">
+                <div class="contact__card" style="--color: var(--whatsapp); --shadow: var(--whatsapp);">
+                    <a href="https://wa.me/5511949506924" target="_blank">
                         <i class="fa-brands fa-whatsapp"></i>
                         <p>WhatsApp</p>
                     </a>
-                    <a href="#" class="contact__card">
+                </div>
+                <div class="contact__card" style="--color: var(--linkedin); --shadow: var(--linkedin);">
+                    <a href="https://www.linkedin.com/in/ricardo-galdino-de-sampaio/" target="_blank">
                         <i class="fa-brands fa-linkedin"></i>
                         <p>LinkedIn</p>
                     </a>
-                    <a href="#" class="contact__card">
+                </div>
+                <div class="contact__card" style="--color: var(--github); --shadow: var(--github);">
+                    <a href="https://github.com/rgsampaio" target="_blank">
                         <i class="fa-brands fa-github"></i>
                         <p>GitHub</p>
                     </a>
-                    <a href="#" class="contact__card">
-                        <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="contact__card" style="--color: var(--email); --shadow: var(--email);">
+                    <a href="mailto:ricardosampaiocontato@gmail.com" target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
                         <p>E-mail</p>
                     </a>
                 </div>
-            </article>
+            </div>
         </section>
     </main>
-    <footer class="footer container"> 
+    <footer class="footer container">
         <p>Copyright © 2025 - Developed by Ricardo Sampaio.</p>
     </footer>
 </body>
-
 </html>
