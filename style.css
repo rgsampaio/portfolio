@@ -308,3 +308,56 @@ main {
     color: var(--accent);
     font-weight: bold;
 }
+
+.skills__content {
+    padding: 8em 0;
+    text-align: center;
+}
+
+.skills__content h2 {
+    text-align: center;
+    margin: 3rem 0 1rem;
+    font-size: 1.8em;
+}
+
+.skills__content p{
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.skills__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.skill__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill__item i {
+    font-size: 3em;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.skill__item span {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1em;
+    color: var(--text-primary);
+}
+
+.skill__item:hover {
+    transform: translateY(-8px);
+}
+
+.skill__item:hover i {
+    transform: scale(1.2);
+}
